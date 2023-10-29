@@ -5,14 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EPL Updated</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
     crossorigin="anonymous">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
         .w-5 {
             display: none;
         }
@@ -20,11 +23,10 @@
 </head>
 
 <body>
-
-    <h1 class="text-center">Student Records</h1>
-    <div class="container mt-10">
-        <a href="http://localhost:8000">Go home</a>
+    <div class="container text-center mb-5 mt-5">
+        <h1>Student Records</h1>
     </div>
+
     <div class="container">
         <table class="table">
             <thead>
@@ -34,8 +36,8 @@
                     <th scope="col">Gender</th>
                     <th scope="col">Name</th>
                     <th scope="col"">Email</th>
-                                    <th scope=" col">Created At</th>
-                    {{--<th scope="col" class="px-6 py-4">Updated At</th> --}}
+                    <th scope=" col">Created At</th>
+                    {{--<th scope="col">Updated At</th> --}}
                 </tr>
             </thead>
     
@@ -49,23 +51,24 @@
                     <td>{{$showDatas->name}}</td>
                     <td>{{$showDatas->email}}</td>
                     <td>{{$showDatas->created_at}}</td>
-                    {{-- <td class="whitespace-nowrap px-6 py-4">{{$showData->update_at}}</td> --}}
+                    {{-- <td class=">{{$showData->update_at}}</td> --}}
                 </tr>
                 @endforeach
             </tbody>
             
         </table>
     </div>
-     
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item disabled">
-            {{ $showData->links() }}
-          </li>
-        </ul>
-      </nav>
     
-   
+    {{-- pagination --}}
+    <div class="container">
+        <ul class="pagination justify-content-center">
+            {{ $showData->links() }}
+        </ul>
+    </div>
+    
+   <div class="container text-center mb-5 mt-5">
+    <a class="btn btn-primary" href="http://localhost:8000">Go back</a>
+   </div>
 
 </body>
 
