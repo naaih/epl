@@ -58,8 +58,8 @@
                     <th scope="col">Student ID</th>
                     <th scope="col">Gender</th>
                     <th scope="col">Name</th>
-                    <th scope="col"">Email</th>
-                    <th scope=" col">Created At</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Created At</th>
                     {{--<th scope="col">Updated At</th> --}}
                 </tr>
             </thead>
