@@ -1,3 +1,9 @@
 ### EPL Updated
 
-![image](student-records.png)
+
+#### home page
+![image](s-records.png)
+
+
+#### student records
+![image](s-records-1.png)
