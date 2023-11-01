@@ -41,7 +41,7 @@
     </div>
   </nav>
 
-  <div class="container text-center align-middle m-5">  
+  <div class="container text-center mb-5 mt-5">  
     <h1>
       Student Records
     </h1>
