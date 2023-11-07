@@ -1,17 +1,13 @@
-<head> 
-    <title>Epl | Student Records</title>
-  </head>
-
 @extends('layouts.app')
 
 @section('content')
-<div class="container text-center mb-5 mt-5">
+<div class="container text-center mb-3 mt-3">
     <h1>
         Student Records
-</h1>
+    </h1>
 </div>
 
-<div class="container">
+<div class="container mb-5">
     <table class="table">
         <thead>
             <tr>

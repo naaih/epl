@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
 
 // Module Controller
-use App\Http\Controllers\ModuleController;
+use App\Http\Controllers\ModulesController;
 
 
 
@@ -21,8 +21,12 @@ Route::get('index', function () {
 });
 
 // Records Page
-Route::get('records',[StudentController::class,'showData']);
+Route::get('records', [StudentController::class,'showData']);
 
+Route::get('bachelor-records', [ModulesController::class, 'showBachData']);
+Route::get('master-records', [ModulesController::class, 'showMasterData']);
+
+// Modules page
 Route::get('modules', function () {
     return view('modules');
 });
