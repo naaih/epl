@@ -23,8 +23,11 @@ Route::get('index', function () {
 // Records Page
 Route::get('records',[StudentController::class,'showData']);
 
-// Modules page
-Route::get('modules', [ModuleController::class, 'modulesData']);
+Route::get('modules', function () {
+    return view('modules');
+});
+
+
 
 // Route for table row 
 // Route::get('/show/{id}', [StudentController::class, 'displayData'])->name('display');

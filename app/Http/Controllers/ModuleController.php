@@ -8,10 +8,5 @@ use App\Models\Module;
 
 class ModuleController extends Controller
 {
-    function modulesData() {
-        $moduleData = Module::all();
-
-        return view('modules', compact('moduleData'));
-
-    }
+    
 }

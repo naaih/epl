@@ -19,7 +19,11 @@
       display: none;
     }
 
-    .displayLink {
+    a {
+      text-decoration: none;
+    }
+    
+    /* .displayLink {
       text-decoration: none;
       color: black;
     }
@@ -27,15 +31,7 @@
     .displayLink:hover {
       text-decoration: underline;
       color: red;
-    }
-
-    a .nav-link:hover {
-      text-decoration: underline;
-    }
-    
-    ul {
-      list-style-type: none;
-    }
+    } */
   </style>
 </head>
 

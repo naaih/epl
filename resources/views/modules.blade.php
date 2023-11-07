@@ -1,4 +1,4 @@
-<head> 
+<head>
   <title>Epl | Modules</title>
 </head>
 
@@ -9,29 +9,18 @@
   <h1>
     Modules
   </h1>
+  <div class="container text-center mt-5">
+    
+    <div class="card p-3 mb-3">
+      <a href="#">BSc Modules</a>
+    </div>
+
+    <div class="card p-3">
+      <a href="#">MSc Modules</a>
+    </div>
+
+  </div>
 </div>
 
-<div class="container">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Module Name</th>
-        <th scope="col">Qualification</th>
-      </tr>
-    </thead>
 
-
-    <tbody>
-      @foreach($moduleData as $moduleDatas)
-      <tr>
-        <td>{{$moduleDatas->id}}</td>
-        <td>{{$moduleDatas->module_name}}</td>
-        <td>{{$moduleDatas->qualification}}</td>
-      </tr>
-      @endforeach
-    </tbody>
-
-  </table>
-</div>
 @endsection
