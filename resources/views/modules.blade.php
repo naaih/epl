@@ -1,9 +1,13 @@
+<head> 
+  <title>Epl | Modules</title>
+</head>
+
 @extends('layouts.app')
 
 @section('content')
 <div class="container text-center mb-5 mt-5">
   <h1>
-    Modules Records
+    Modules
   </h1>
 </div>
 

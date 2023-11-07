@@ -1,3 +1,7 @@
+<head> 
+  <title>Epl | Home</title>
+</head>
+
 @extends('layouts.app')
 
 @section('content')

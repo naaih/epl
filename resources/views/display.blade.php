@@ -1,14 +1,10 @@
-<head> 
-    <title>Epl | Student Records</title>
-  </head>
-
 @extends('layouts.app')
 
 @section('content')
 <div class="container text-center mb-5 mt-5">
     <h1>
-        Student Records
-</h1>
+        Student Record
+    </h1>
 </div>
 
 <div class="container">
@@ -26,20 +22,15 @@
 
 
         <tbody>
-            @foreach($showData as $showDatas)
             <tr>
-                <td>{{$showDatas->id}}</td>
-                <td>{{$showDatas->student_id}}</td>
-                <td>{{$showDatas->gender}}</td>
-                <td>{{$showDatas->name}}</a></td>
-                <td>{{$showDatas->email}}</td>
-                <td>{{$showDatas->created_at}}</td>
+                <td>{{$showData->id}}</td>
+                <td>{{$showData->student_id}}</td>
+                <td>{{$showData->gender}}</td>
+                <td>{{$showData->name}}</td>
+                <td>{{$showData->email}}</td>
+                <td>{{$showData->created_at}}</td>
             </tr>
-            @endforeach
         </tbody>
     </table>
 </div>
 @endsection
-
-
-{{-- <a href="{{ route('display', $showDatas->id) }}"> --}}
