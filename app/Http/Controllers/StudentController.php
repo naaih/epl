@@ -6,13 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Models\Student;
 
+
 class StudentController extends Controller
 {
     // function
     function showData() {
-       $showData = Student::paginate(5);
+        $showData = Student::all();
 
-    return view('records', compact('showData'));
+        return view('records', compact('showData'));
 
     }
 }

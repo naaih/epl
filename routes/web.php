@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Controller
+// Student Controller
 use App\Http\Controllers\StudentController;
 
+// Module Controller
+use App\Http\Controllers\ModuleController;
 
 // Home
 Route::get('/', function () {
@@ -13,3 +15,5 @@ Route::get('/', function () {
 
 // Records
 Route::get('records',[StudentController::class,'showData']);
+
+Route::get('modules', [ModuleController::class, 'modulesData']);
