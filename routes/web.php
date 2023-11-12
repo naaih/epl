@@ -23,15 +23,13 @@ Route::get('index', function () {
 // Records Page
 Route::get('records', [StudentController::class,'showData']);
 
-Route::get('bachelor-records', [ModulesController::class, 'showBachData']);
-Route::get('master-records', [ModulesController::class, 'showMasterData']);
-
 // Modules page
 Route::get('modules', function () {
     return view('modules');
 });
 
+Route::get('bachelor-records', [ModulesController::class, 'showBachData']);
+Route::get('master-records', [ModulesController::class, 'showMasterData']);
 
-
-// Route for table row 
-// Route::get('/show/{id}', [StudentController::class, 'displayData'])->name('display');
+// Route to get a single row of data from the database
+Route::get('/show{id}', [StudentController::class, 'displayData'])->name('display');

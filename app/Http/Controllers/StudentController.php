@@ -16,9 +16,9 @@ class StudentController extends Controller
         return view('records', compact('showData'));
     }
 
-    // function displayData(Request $request) {
-    //     $showData = Student::find($request->id);
-    //     return view('display', compact('showData'));
-    // }
+    function displayData(Request $request) {
+        $showData = Student::find($request->id);
+        return view('display', compact('showData'));
+    }
    
 }

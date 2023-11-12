@@ -34,15 +34,23 @@
       font-weight: bold;
     }
 
-    /* .displayLink {
+    .displayLink {
       text-decoration: none;
       color: black;
     }
 
     .displayLink:hover {
       text-decoration: underline;
-      color: red;
-    } */
+      color: rgb(30, 0, 255);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    p {
+      font-size: 20px;
+    }  
   </style>
 </head>
 
