@@ -7,38 +7,22 @@
         </h1>
     </div>
 
-    <div class="container mt-5">
-        <ul>
-            <li>
-                <h4>Name:</h4>
-                <p>{{ $showData->name }}</p>
-                <h4>Student ID:</h4>
-                <p>{{ $showData->student_id }}</p>
-                <h4>Gender:</h4>
-                <p>{{ $showData->gender }}</p>
-                <h4>Email:</h4>
-                <p>{{ $showData->email }}</p>
-                <h4>Module:</h4>
-                <p>{{ $showData->module_taken }}</p>
+    <div class="card" style="width: 18rem">
+        <div class="card-body" ">
+            <img class="card-img-top" src="./download.svg" alt="Card image cap">
+            <h5 class="card-title">{{ $showData->name }}</h5>
+            <li class="list-group-item">
+                <p class="card-text">{{ $showData->gender }}</p>
             </li>
-        </ul>
-
-        {{-- <div class="container">
-            <h5>Name:</h5>
-            <li>{{ $showData->name }}</li>
-
-            <h5>Student ID:</h5>
-            <li>{{ $showData->student_id }}</li>
-
-            <h5>Gender:</h5>
-            <li>{{ $showData->gender }}</li>
-
-            <h5>Email:</h5>
-            <li>{{ $showData->email }}</li>
-
-            <h5>Module:</h5>
-            <li>{{ $showData->module_taken }}</li>
-        </div> --}}
-
+            <li class="list-group-item">
+                <p class="card-text">{{ $showData->student_id }}</p>
+            </li>
+            <li class="list-group-item">
+                <p class="card-text">{{ $showData->email }}</p>
+            </li>
+            <li class="list-group-item">
+                <p class="card-text">{{ $showData->module_taken }}</p>
+            </li>
+        </div>
     </div>
 @endsection
