@@ -40,8 +40,9 @@
     }
 
     .displayLink:hover {
-      text-decoration: underline;
-      color: rgb(30, 0, 255);
+      color: #ffffff;
+      background-color: rgb(0, 0, 0);
+      padding: 2px;
     }
 
     ul, li {

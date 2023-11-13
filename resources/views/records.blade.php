@@ -19,13 +19,13 @@
     <table class="table">
         <thead>
             <tr>
-                <td scope="col">ID</td>
-                <td scope="col">Student ID</td>
-                <td scope="col">Gender</td>
-                <td scope="col">Name</td>
-                <td scope="col">Email</td>
-                <td scope="col">Module</td>
-                <td scope="col">Created At</td>
+                <th scope="col">ID</th>
+                <th scope="col">Student ID</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Module</th>
+                <th scope="col">Created At</th>
             </tr>
         </thead>
 
@@ -36,7 +36,13 @@
                 <td>{{$showDatas->id}}</td>
                 <td>{{$showDatas->student_id}}</td>
                 <td>{{$showDatas->gender}}</td>
-                <td><a class="displayLink" href="{{ route('display', $showDatas->id) }}">{{$showDatas->name}}</a></td>
+                <td>
+                    <a 
+                        class="displayLink" 
+                        href="{{ route('display', $showDatas->id) }}">
+                        {{$showDatas->name}}
+                    </a>
+                </td>
                 <td>{{$showDatas->email}}</td>
                 <td>{{$showDatas->module_taken}}</td>
                 <td>{{$showDatas->created_at}}</td>
