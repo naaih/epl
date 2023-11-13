@@ -44,7 +44,7 @@
       color: rgb(30, 0, 255);
     }
 
-    ul {
+    ul, li {
       list-style: none;
     }
 

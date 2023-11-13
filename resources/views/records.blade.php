@@ -7,6 +7,14 @@
     </h1>
 </div>
 
+{{-- 
+<div class="container text-center mb-4 mt-4">
+    <form action="search_data" method="GET">
+        <input type="text" name="search">
+        <button type="submit">Search</button>
+    </form>
+</div> --}}
+
 <div class="container mb-5">
     <table class="table">
         <thead>
@@ -38,6 +46,3 @@
     </table>
 </div>
 @endsection
-
-
-{{-- <a href="{{ route('display', $showDatas->id) }}"> --}}

@@ -33,3 +33,5 @@ Route::get('master-records', [ModulesController::class, 'showMasterData']);
 
 // Route to get a single row of data from the database
 Route::get('/show{id}', [StudentController::class, 'displayData'])->name('display');
+
+// Route::get('search_data', [StudentController::class, 'searchData']);

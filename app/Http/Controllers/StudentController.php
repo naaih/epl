@@ -20,5 +20,12 @@ class StudentController extends Controller
         $showData = Student::find($request->id);
         return view('display', compact('showData'));
     }
-   
+
+    // function searchData(Request $request) {
+    //     $data = $request -> Input('search');
+
+    //     $showData = DB::table('students')->where('name', 'like', '%', $data, '%')->get();
+    
+    //     return view('records', compact('showData'));
+    // }
 }
