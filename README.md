@@ -3,7 +3,7 @@
 #### Home page:
 ![image](home.png)
 
-#### Student Records:
+#### Student Record:
 ![image](s-records.png)
 
 #### Indiviual Student Records
