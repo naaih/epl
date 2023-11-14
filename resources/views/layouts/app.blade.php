@@ -52,6 +52,18 @@
     p {
       font-size: 20px;
     }  
+
+    #recordsCard {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        margin-top: 50px; /* Added */
+    }
+
+    .recordsHeading {
+      color: #8e8d8d;
+      text-decoration: underline;
+    }
   </style>
 </head>
 

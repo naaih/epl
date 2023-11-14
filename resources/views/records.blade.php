@@ -29,7 +29,6 @@
                 </tr>
             </thead>
 
-
             <tbody>
                 @foreach ($showData as $showDatas)
                     <tr>
