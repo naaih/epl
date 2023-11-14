@@ -1,4 +1,13 @@
 ### EPL Updated
 
-https://github.com/naaih/epl-updated/assets/24250947/119b483e-a7e0-44a9-b506-a40e17278d6e
+#### Home page:
+![image](home.png)
 
+#### Student Records:
+![image](s-records.png)
+
+#### Indiviual Student Records
+![image](i-s-records.png)
+
+#### Modules Page
+![image](modules.png)
