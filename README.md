@@ -3,11 +3,11 @@
 #### Home page:
 ![image](home.png)
 
-#### Student Record:
+#### Student Records:
 ![image](s-records.png)
 
-#### Indiviual Student Records
+#### Indiviual Student Record:
 ![image](i-s-records.png)
 
-#### Modules Page
+#### Modules Page:
 ![image](modules.png)
